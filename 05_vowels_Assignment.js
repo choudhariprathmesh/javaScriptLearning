@@ -1,12 +1,12 @@
 console.log("===================================================================================");
-var sentence= function(val) {
-    var counter=0;
+var sentence = function (val) {
+    var counter = 0;
     for (let index = 0; index < val.length; index++) {
         var char = val.charAt(index);
         var charcopy = char.toLowerCase();
-        if (charcopy=='a') {
+        if (charcopy == 'a') {
             // console.log(char);
-            counter=counter+1;
+            counter = counter + 1;
         }
     }
     console.log(`The Given String Is :- '${val}'`);
