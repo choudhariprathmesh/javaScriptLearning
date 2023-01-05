@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage </title>
+</head>
+<body>
+    <h2>Session Storage Learning</h2>
+    <script>
+        console.log("Hello --> Session storage");
+        window.sessionStorage.setItem("name", "Pratmesh Choudhari");
+        window.sessionStorage.setItem("city", "Sangola");
+        window.sessionStorage.setItem("district", "Solapur");
+        window.sessionStorage.setItem("pincode", "413307");
+        // const len = window.sessionStorage.length;
+        // console.log(len);
+        const clgName = window.sessionStorage.getItem("name");
+        const distName = window.sessionStorage.getItem("district");
+        const pinCode = window.sessionStorage.getItem("pincode");
+        console.log(pinCode);
+        console.log(distName);
+        console.log(clgName);
+        window.sessionStorage.removeItem("city");
+        // window.sessionStorage.clear();
+    </script>
+
+
+
+</body>
+</html>
+ 
+

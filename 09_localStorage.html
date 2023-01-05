@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage </title>
+</head>
+<body>
+    <h2>Local Storage Learning</h2>
+    <script>
+        console.log("Hello --> Session storage");
+        window.LocalStorage.setItem("name", "Sitaram");
+        window.LocalStorage.setItem("grade", "A+");
+        window.LocalStorage.setItem("college", "Fabtech College");
+        window.LocalStorage.setItem("city", "Sangola");
+        const len = window.LocalStorage.length;
+        console.log(len);
+        const clgName = window.LocalStorage.getItem("college");
+        console.log(clgName);
+        window.LocalStorage.removeItem("grade");
+        // window.LocalStorage.clear();
+    </script>
+
+
+
+</body>
+</html>
