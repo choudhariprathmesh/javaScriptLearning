@@ -39,3 +39,5 @@ empArray.sort((emp1,emp2)=>{
 empArray.forEach((value)=>{
     console.log(value.empName,value.empSalary,value.empCompany);
 })
+
+console.warn("hello World")
